@@ -1,0 +1,117 @@
+.header {
+    -webkit-animation: colorchange 45s infinite; 
+    animation: colorchange 45s infinite;
+    height: 60px;
+}
+@-webkit-keyframes colorchange {
+    0%  {background: #FF0000;}    
+   20%  {background: #FF8C00;}
+   30%  {background: #FFD700;}
+   40%  {background: #7CFC00;}
+   50%  {background: #008000;}
+   60%  {background: #00BFFF;}
+   70%  {background: #0000CD;}
+   80%  {background: #FF1493;}
+   90%  {background: #9400D3;}
+   100% {background: #78281F;}
+}
+
+
+@keyframes colorchange {
+    0%  {background: #FF0000;}    
+   20%  {background: #FF8C00;}
+   30%  {background: #FFD700;}
+   40%  {background: #7CFC00;}
+   50%  {background: #008000;}
+   60%  {background: #00BFFF;}
+   70%  {background: #0000CD;}
+   80%  {background: #FF1493;}
+   90%  {background: #9400D3;}
+   100% {background: #78281F;}
+}   
+.item {
+    height: 100%;
+    position:relative;
+    margin-left: 20px;
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+}
+.item a{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.myanchor {  
+    margin-left: 5px;
+}
+.myanchor2{
+    margin-right: 50px; 
+}
+a:hover{
+    background-color: lightgrey;
+    text-decoration: underline;
+}
+.left{
+    display: inline-block;
+    width: 40%;
+}
+.right{
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+    margin-left: -5px;
+}
+.legend-color{
+    display:inline-block;
+    width:1.5em; height:1.5em;
+    margin:1px 0; 
+    border:1px solid black;
+    color:black;
+    font-size:100%; 
+    text-align:center;
+}
+.div-main{
+    margin:20px ;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: large;
+}
+.div-main h2{
+    margin: unset;
+    color: red;
+}
+footer{
+    background-color: #f1f1f1;;
+}
+.question{
+    border-radius: 5px;
+    border: 2px solid paleturquoise;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin : 10px
+}
+.question i{
+    color: teal;
+    float: right;
+    font-size: 20px;
+}
+.answer{
+    display: none;
+    border-radius: 5px;
+    border: 2px solid tomato;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin : 10px 
+}
+input{
+    border-radius: 10px;
+    width: 50%;
+    padding: 20px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+

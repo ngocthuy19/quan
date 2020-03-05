@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quảng cáo</title>
+    <link rel="stylesheet" href="corona.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+    input {
+        overflow-y: visible;
+        margin: 25px;
+    }
+
+    i {
+        margin-left: 2px;
+        font-size: xx-large;
+        color: cyan;
+    }
+
+    h1 {
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: whitesmoke;
+
+    }
+
+    .item-1,
+    .item-2,
+    .item-3 {
+        position: absolute;
+        display: block;
+        animation-duration: 20s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+    button {
+        padding: 10px;
+        margin: 20px;
+        font-size: 20px;
+        background-color: lawngreen;
+        border-radius: 10px;
+    }
+
+    button:hover {
+        transform: scale3d(1.5, 1.5, 1.5)
+    }
+
+    .item-1 {
+        animation-name: anim-1;
+    }
+
+    .item-2 {
+        animation-name: anim-2;
+    }
+
+    .item-3 {
+        animation-name: anim-3;
+    }
+    .item-4 {
+        animation-name: anim-4;
+    }
+
+    @keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 15%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 15%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 15%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+
+
+
+</style>
+
+<body style="background-image: url(Capture.PNG);background-repeat: no-repeat;background-size: cover;margin: unset;">
+    <div style="height: 80px;">
+        <img src="aptech.png" alt="" width="100%" height="100%">
+    </div>
+
+    <center>
+        <h1 class="item-1">Bạn đang cần một trang web uy tín để biết chính xác thông tin về dịch bệch</h1>
+        <h1 class="item-2">Bạn đang phân vân giữa độ chính xác giữa các trang web</h1>
+        <h1 class="item-3">Bạn đang không biết làm thế nào để cập nhật đầy đủ thông tin về<br><b
+                style="color: black;">Covid-19!</b> </h1><br><br><br><br>
+        <h1 >Nắm bắt tâm lí đó, chúng tôi đã cho ra đời sản phẩm dự thi từ thế hệ học sinh đầu tiên THPT Aptech đầy chất
+            lượng </h1>
+        <button onclick="corona()"><b>All About Corona</b></button>
+        <h1 style="color: lemonchiffon;font-size: 20px;">Để truy cập trang hay bấm vào nút ở trên, vui lòng góp ý bình
+            luận ở dưới đây</h1>
+        <input type="text" placeholder="Enter your comment">
+        <i class="fas fa-arrow-circle-right"></i>
+    </center>
+
+</body>
+
+</html>
+<footer style="height: 450px;">
+    <img src="thanhcong.PNG" alt="" width="100%">
+    <img src="copyright.PNG" alt="" height="100%" width="100%">
+</footer>
+<script>
+    function corona() {
+        window.location.href = 'corona.html'
+    }
+</script>

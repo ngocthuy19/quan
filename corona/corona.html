@@ -1,0 +1,212 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllAboutCorona</title>
+    <link rel="stylesheet" href="corona.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<style>
+    button{
+        margin: unset   ;
+        padding: 5px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+    #vietnam{
+        display: none;
+    }
+    table h1{
+        font-size: 35px;
+    }
+    tr:first-child{
+        padding: 20px;
+    }
+    tr,td{
+        padding-left: 20px;
+    }
+</style>
+<body>
+    <div class="header">
+        <div style="margin-left: 150px;" class="item">
+            <i class="fas fa-home"></i>
+            <a class="myanchor" href="corona.html">All About Corona</a>
+        </div>
+        <div class="item">
+            <a class="myanchor" href="menu.html">Đặc điểm</a>
+        </div>
+        <div class="item">
+
+            <a class="myanchor" href="hoatdong.html">Hoạt động</a>
+        </div>
+        <div class="item">
+
+            <a class="myanchor" href="phongchong.html">Phòng chống</a>
+        </div>
+        <div class="item">
+
+            <a class="myanchor" href="tacdong.html">Tác động</a>
+        </div>
+        <div class="item">
+
+            <a class="myanchor" href="loikhuyen.html">Lời khuyên</a>
+        </div>
+        <div style="scroll-margin-right: 1px;float: right;margin-right: 100px;height: 100%;" >
+            <div class="item"><a class="myanchor2" href="chiase.html">Chia sẻ</a></div>
+            <div class="item"><a class="myanchor2" href="theodoi.html" >Theo dõi</a></div>  
+        </div>
+    </div>
+    <div style="background-image: url(https://channelvn.mediacdn.vn/web_images/corona-worldmap-grey-bg.png);">
+        <div class="left" >
+            <img src="Corona.PNG" width="80%" height="50%">
+            <p style="font-size: larger;margin-right: 30px;margin-top: unset;margin-bottom: unset;">Cổng thông tin "All About Corona" cập nhật liên tục
+                tình hình dịch bệnh cũng như giúp bạn tự kiểm tra, tự bảo vệ thông qua Cẩm nang kiến thức .
+                Nguồn thông tin chính thống từ Bộ Y tế,
+                WHO, Chuyên gia Y khoa. Hãy cùng chúng tôi ngay bây giờ để bảo vệ bản thân, gia đình và xã hội!
+            </p>
+            <center style="margin-top: 30px;">
+                <button style="background-color: F1F1F1;" onclick="world()" id="btn2"><i class="fas fa-globe-europe"></i>Thế giới</button>
+                <button style="background-color: white;" onclick="vietnam()" id="btn1"><i class="far fa-star"></i>Việt Nam</button>
+                <div id="world">
+                    <table>
+                        <tr>
+                            <td><h1 style="color: red;">94,405</h1></td>
+                            <td><h1 style="color: gray;">3226</h1></td>
+                            <td><h1 style="color: seagreen">51,324</h1></td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;"><i class="fas fa-sort-up"></i>2070 (2.2%)</td>
+                            <td style="color: gray;"><i class="fas fa-sort-up"></i>84 (2.7%)</td>
+                            <td style="color: seagreen"><i class="fas fa-sort-up"></i>2859 (5.9%)</td>
+                        </tr>
+                        <tr>
+                            <td><b>Số người nhiễm</b></td>
+                            <td><b>Số người chết</b></td>
+                            <td><b>Số ca chữa khỏi</b></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="vietnam">
+                    <table>
+                        <tr>
+                            <td><h1 style="color: red;">16</h1></td>
+                            <td><h1 style="color: gray;">0</h1></td>
+                            <td><h1 style="color: seagreen">16</h1></td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;"><i class="fas fa-sort-up">0 (0.0%)</i></td>
+                            <td style="color: gray;"><i class="fas fa-sort-up">0 (0.0%)</i></td>
+                            <td style="color: seagreen"><i class="fas fa-sort-up"> 0(0.0%)</i></td>
+                        </tr>
+                        <tr>
+                            <td><b>Số người nhiễm</b></td>
+                            <td><b>Số người chết</b></td>
+                            <td><b>Số ca chữa khỏi</b></td>
+                        </tr>
+                    </table>
+                </div>
+            </center>
+            <script>
+                function vietnam(){
+                    document.getElementById('world').style.display = "none";
+                    document.getElementById('vietnam').style.display = "block";
+                    document.getElementById('btn1').style.backgroundColor = "F1F1F1"
+                    document.getElementById('btn2').style.backgroundColor = "white"
+                }
+                function world(){
+                    document.getElementById('vietnam').style.display = "none";
+                    document.getElementById('world').style.display = "block";
+                    document.getElementById('btn1').style.backgroundColor = "white"
+                    document.getElementById('btn2').style.backgroundColor = "F1F1F1"
+                }
+            </script>
+        </div>
+        <div class="right">
+            <div style="display: inline-block; width: 65%;">
+                <h1 style="margin-left: 60px;color: coral;">Thông tin cơ bản về dịch bệch</h1>
+                <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-bottom: unset;">
+                    <b>Dịch bệnh <a
+                            href="https://vi.wikipedia.org/wiki/B%E1%BB%87nh_virus_corona_2019_(COVID-19)">COVID-19</a></b>
+                    (tên chính thức bởi WHO), còn được gọi là <b>dịch viêm phổi cấp do virus corona mới</b>
+                    (NCP – do Trung Quốc gọi), dịch virus corona Vũ Hán hay dịch viêm phổi Vũ Hán là một dịch bệnh
+                    truyền nhiễm gây ra bởi virus <abbr
+                        title="Virus corona gây hộ chứng hô hấp cấp tính nặng 2">SARS-CoV 2</abbr> đang ảnh hưởng đến
+                    Trung Quốc đại lục, cùng với các trường
+                    hợp ở 68 quốc gia và vùng lãnh thổ khác, bắt đầu bùng phát vào giữa tháng 12 năm 2019 tại thành
+                    phố Vũ Hán thuộc tỉnh Hồ Bắc ở miền Trung Trung Quốc, khi một nhóm người bị viêm phổi không rõ
+                    nguyên nhân, đã tiếp xúc chủ yếu với những người buôn bán làm việc tại chợ bán buôn hải sản Hoa Nam,
+                    nơi bán động vật sống và được cho là địa điểm bùng phát dịch bệnh đầu tiên – điều này vẫn đang còn
+                    nhiều tranh cãi. Người đầu tiên có các triệu chứng lạ liên quan đến căn bệnh này đã không hề tiếp
+                    xúc đến chợ Hoa Nam. Các nhà khoa học Trung Quốc sau đó đã phân lập được một loại coronavirus mới,
+                    được WHO lúc đó tạm thời gọi là 2019-nCoV, có trình tự gen giống ít nhất 79,5% với SARS-CoV trước
+                    đây. Sự lây nhiễm từ người sang người đã được xác nhận cùng với tỉ lệ bùng phát dịch tăng
+                    nhanh vào giữa tháng 1 năm 2020. Thời gian ủ bệnh từ 2 đến 14 ngày, đã có bằng chứng rằng
+                    bệnh có thể truyền nhiễm trong khoảng thời gian này và trong vài ngày sau khi hồi phục. Triệu chứng
+                    của bệnh bao gồm sốt, ho, khó thở, và thậm chí có thể gây thiệt mạng.</p>
+                    <img src="map.PNG" height="350px" width="100%">
+            </div>
+            <table class="infobox vevent" style="border: 1px solid black;float: right; width: 25%;">
+                <caption class="summary">Dịch Covid-19 (Bệnh viêm phổi do virus corona mới)</caption>
+                <tbody>
+                    <tr>
+                        <td colspan="2" style="text-align:center;border-bottom:#aaa solid 1px"><img
+                                src="1920px-COVID-19_Outbreak_World_Map.svg.png" decoding="async" width="220"
+                                height="113" data-file-width="512" data-file-height="263"></a>
+                            <div style="padding:5px">Bản đồ bùng phát Dịch COVID-19 tính đến ngày 2 tháng 3 năm 2020<div
+                                    style="float:left;">
+                                    <div class="legend"><span class="legend-color"
+                                            style=" background-color: #710000; ">&nbsp;</span>&nbsp;1000+
+                                        trường hợp được xác nhận</div>
+                                    <div class="legend"><span class="legend-color"
+                                            style="  background-color: #c80604; ">&nbsp;</span>&nbsp;100–999
+                                        trường hợp được xác nhận</div>
+                                    <div class="legend"><span class="legend-color"
+                                            style=" background-color: #ee7070; ">&nbsp;</span>&nbsp;10–99
+                                        trường hợp được xác nhận</div>
+                                    <div class="legend"><span class="legend-color"
+                                            style=" background-color: #ffC0C0; ">&nbsp;</span>&nbsp;1–9
+                                        trường hợp được xác nhận</div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Địa điểm</th>
+                        <td class="location" style="text-align: left;">Toàn thế giới<br><i>(Được xác nhận xảy ra đầu
+                                tiên tại <a href="/wiki/V%C5%A9_H%C3%A1n" title="Vũ Hán">Vũ Hán</a>, <a
+                                    href="/wiki/H%E1%BB%93_B%E1%BA%AFc" title="Hồ Bắc">Hồ Bắc</a>, <a
+                                    href="/wiki/Trung_Qu%E1%BB%91c" title="Trung Quốc">Trung Quốc</a>)</i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Thời gian</th>
+                        <td style="text-align: left;">1 tháng 12 năm 2019 – hiện tại<br>(3 tháng và 1 ngày)</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2" class="navbox-abovebelow"
+                            style="text-align:center;padding:2px;background-color:lavender;">Thương vong</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center;text-align: left;">
+                            <center><b>Số ca được xác nhận</b>: 89.074<br><b>Số ca tử vong</b>: 3.049<br><b>Vùng lãnh
+                                    thổ bị ảnh
+                                    hưởng</b>: 71<br><i>Tính đến ngày 2 tháng 3 năm 2020</i></center>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+<footer>
+    <center>
+        <i class="fas fa-phone" style="color: red;margin: 20px 0;font-size: 20px;"></i><br>
+        Hãy gọi <b>1900 3228 hoặc 1900 9095</b> để cung cấp các thông tin,<br> ý kiến về tình hình dịch bệnh trên toàn quốc và nhận tư vấn<br> 
+        cách phòng chống dịch bệnh
+    </center>
+</footer>
+</html>
